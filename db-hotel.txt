@@ -29,7 +29,7 @@ SELECT MAX(price) FROM pagamenti
 
 
  • Seleziona gli ospiti riconosciuti con patente e nati nel 1975
-
+SELECT name , lastname,document_type , YEAR(date_of_birth) FROM ospiti WHERE document_type LIKE 'Driver License' AND YEAR(date_of_birth) LIKE '1975'
 
 
 
